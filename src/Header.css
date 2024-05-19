@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    align-items: center;
+
+    height: 3em;
+    padding: 0.5em 1em;
+
+    background-color: #052849;
+
+    svg {
+        height: 1em;
+    }
+}
