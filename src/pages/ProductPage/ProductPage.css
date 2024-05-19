@@ -39,8 +39,8 @@
     }
 
     .tags {
-        display: flex;
         flex-wrap: wrap;
+        display: flex !important;
         gap: 0.5em;
 
         padding: 1em;

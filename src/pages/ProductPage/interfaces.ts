@@ -24,3 +24,13 @@ export interface Product {
   tags: string[];
   sales: Sale[];
 }
+
+export interface Column {
+  name: string;
+  key: keyof Sale;
+}
+
+export interface SortDef {
+  by: keyof Sale;
+  dir: "asc" | "dec";
+}

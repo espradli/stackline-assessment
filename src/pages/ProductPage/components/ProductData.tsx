@@ -1,8 +1,8 @@
-import { Product } from "../../../interfaces";
 import { useSalesGraph } from "../hooks";
-import { Column, ProductTable } from "./ProductTable";
+import { ProductTable } from "./ProductTable";
 import "../ProductPage.css";
 import { ProductGraph } from "./ProductGraph";
+import { Product, Column } from "../interfaces";
 
 interface ProductDataProps {
   product: Product;

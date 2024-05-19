@@ -3,7 +3,7 @@ import "./ProductPage.css";
 import type { RootState } from "../../redux/store";
 import { ProductInfo } from "./components/ProductInfo";
 import { ProductData } from "./components/ProductData";
-import { Product } from "../../interfaces";
+import { Product } from "./interfaces";
 
 interface ProductPageProps {
   productId: string;
