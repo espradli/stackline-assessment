@@ -1,3 +1,5 @@
+import { Product } from "./interfaces";
+
 interface TagProps {
   text: string;
 }
@@ -6,13 +8,12 @@ const Tag = ({ text }: TagProps) => {
   return <div className="tag">{text}</div>;
 };
 
-export const ProductInfo = () => {
-  const title = "Shark Ninja";
-  const subtitle =
-    "Magic Bullet NutriBullet 12-Piece High-Speed Blender/Mixer System";
-  const tags = ["Pantry", "Obsolete", "Blender", "Lightning Deal"];
-  const imgUrl =
-    "https://images-na.ssl-images-amazon.com/images/I/51h-a5IaHeL.jpg";
+interface ProductInfoProps {
+  product: Product;
+}
+
+export const ProductInfo = ({ product }: ProductInfoProps) => {
+  const { title, subtitle, tags, image: imgUrl } = product;
 
   return (
     <div className="product-info">

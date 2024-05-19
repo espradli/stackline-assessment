@@ -4,17 +4,20 @@ import { ProductPage } from "./ProductPage";
 import { Header } from "./Header";
 import productData from "./product_data.json";
 import { addProduct } from "./productsSlice";
-
-const getProductData = () =>
-  productData.forEach((product) => addProduct(product));
+import { AppDispatch } from "./store";
+import { useDispatch } from "react-redux";
 
 function App() {
-  useEffect(() => getProductData());
+  const dispatch = useDispatch<AppDispatch>();
+  useEffect(() => {
+    productData.forEach((product) => dispatch(addProduct(product)));
+  });
 
+  const productId = "B007TIE0GQ";
   return (
     <>
       <Header />
-      <ProductPage />
+      <ProductPage productId={productId} />
     </>
   );
 }

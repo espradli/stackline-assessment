@@ -70,6 +70,9 @@
             0 8px 16px rgba(0, 0, 0, 0.07),
             0 16px 32px rgba(0, 0, 0, 0.07),
             0 32px 64px rgba(0, 0, 0, 0.07);
+
+        padding: 2em;
+        font-size: large;
     }
 
     .product-table {
@@ -81,5 +84,35 @@
             0 8px 16px rgba(0, 0, 0, 0.07),
             0 16px 32px rgba(0, 0, 0, 0.07),
             0 32px 64px rgba(0, 0, 0, 0.07);
+
+        .sort-button {
+            display: inline-block;
+            color: #abb7c5;
+            padding-left: 1em;
+            cursor: pointer;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            font-weight: inherit;
+            padding: 1em 4em;
+        }
+
+        tbody {
+            color: #abb7c5;
+        }
+
+        tr {
+            border-top: 1px solid #eaebec;
+            border-bottom: 1px solid #eaebec;
+        }
+
+        td {
+            padding: 1em 5em;
+        }
     }
 }
