@@ -15,7 +15,7 @@ const sortData = (sort: SortDef, data: Sale[]) => {
 
 const dollarColumns = new Set([
   "retailSales",
-  "wholesalleSales",
+  "wholesaleSales",
   "retailerMargin",
 ]);
 
