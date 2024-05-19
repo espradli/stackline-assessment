@@ -1,4 +1,4 @@
-import { Product } from "./interfaces";
+import { Product } from "../../../interfaces";
 
 interface TagProps {
   text: string;
@@ -24,7 +24,7 @@ export const ProductInfo = ({ product }: ProductInfoProps) => {
       <div className="subtitle">{subtitle}</div>
       <div className="tags">
         {tags.map((tag) => (
-          <Tag text={tag} />
+          <Tag text={tag} key={tag} />
         ))}
       </div>
     </div>

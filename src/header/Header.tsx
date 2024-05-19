@@ -1,4 +1,4 @@
-import { ReactComponent as StacklineLogo } from "./stackline_logo.svg";
+import { ReactComponent as StacklineLogo } from "../assets/stackline_logo.svg";
 import "./Header.css";
 
 export const Header = () => {

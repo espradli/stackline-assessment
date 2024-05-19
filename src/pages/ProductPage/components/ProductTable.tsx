@@ -1,6 +1,6 @@
-import "./ProductPage.css";
-import { Sale } from "./interfaces";
+import "../ProductPage.css";
 import { useState } from "react";
+import { Sale } from "../../../interfaces";
 
 export interface Column {
   name: string;
@@ -32,7 +32,7 @@ export const ProductTable = ({ columns, data }: ProductTableProps) => {
     by: columns[0].key,
     dir: "asc",
   });
-  console.log(sort);
+
   const sortedData = sortData(sort, data);
   return (
     <div className="product-table">
@@ -66,7 +66,7 @@ export const ProductTable = ({ columns, data }: ProductTableProps) => {
           {sortedData.map((item, idx) => (
             <tr key={idx}>
               {columns.map((col) => (
-                <td>{item[col.key]}</td>
+                <td key={col.key + idx}>{item[col.key]}</td>
               ))}
             </tr>
           ))}

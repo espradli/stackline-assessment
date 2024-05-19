@@ -1,9 +1,9 @@
 import { useSelector } from "react-redux";
-import { Product } from "./interfaces";
-import { ProductData } from "./ProductData";
-import { ProductInfo } from "./ProductInfo";
 import "./ProductPage.css";
-import type { RootState } from "./store";
+import type { RootState } from "../../redux/store";
+import { ProductInfo } from "./components/ProductInfo";
+import { ProductData } from "./components/ProductData";
+import { Product } from "../../interfaces";
 
 interface ProductPageProps {
   productId: string;

@@ -1,5 +1,5 @@
 import { ChartData, ChartOptions } from "chart.js";
-import { Sale } from "./interfaces";
+import { Sale } from "../../interfaces";
 
 export const useSalesGraph = (sales: Sale[]) => {
   const wholesale = sales.map((sale) => sale.wholesaleSales);

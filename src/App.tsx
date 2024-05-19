@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import { ProductPage } from "./ProductPage";
-import { Header } from "./Header";
-import productData from "./product_data.json";
-import { addProduct } from "./productsSlice";
-import { AppDispatch } from "./store";
+import { addProduct } from "./redux/productsSlice";
+import { AppDispatch } from "./redux/store";
 import { useDispatch } from "react-redux";
+import { Header } from "./header/Header";
+import { ProductPage } from "./pages/ProductPage/ProductPage";
+import productData from "./assets/product_data.json";
 
 function App() {
   const dispatch = useDispatch<AppDispatch>();

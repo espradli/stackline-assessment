@@ -10,7 +10,7 @@ import {
   ChartOptions,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
-import "./ProductPage.css";
+import "../ProductPage.css";
 import "chartjs-adapter-date-fns";
 
 interface ProductGraphProps {
